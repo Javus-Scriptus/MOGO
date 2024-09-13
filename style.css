@@ -1,0 +1,43 @@
+:root {
+  --dark-gray: #626262;
+  --coffee-brown: #b4ad9e;
+  --light-brown: #7d7d7d;
+  --blue: #03a9f4;
+  --white: #ffffff;
+}
+
+nav a {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #7d7d7d;
+}
+
+.card-category {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #b4ad9e;
+}
+
+.card-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #626262;
+}
+
+.card-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+.button {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+.container {
+  max-width: 906px;
+  margin: 0 auto;
+}
