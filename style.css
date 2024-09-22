@@ -4,6 +4,16 @@
   --light-brown: #7d7d7d;
   --blue: #03a9f4;
   --white: #ffffff;
+  --icon-green: #95e1d3;
+}
+
+body {
+  background: linear-gradient(121.28deg, #31bc00 0%, #000000 100%),
+    linear-gradient(180deg, #5200ff 0%, #1a0050 100%),
+    linear-gradient(341.1deg, #ff0000 7.52%, #1700a4 77.98%),
+    radial-gradient(49.82% 80.51% at 49.82% 50%, #5a0069 0%, #ff3d00 100%),
+    radial-gradient(50% 72.12% at 50% 50%, #eb00ff 0%, #110055 100%);
+  background-blend-mode: color-dodge, overlay, difference, difference, normal;
 }
 
 nav a {
@@ -40,4 +50,42 @@ nav a {
 .container {
   max-width: 906px;
   margin: 0 auto;
+}
+
+/* section 1 */
+
+.icon-1 {
+  width: 37.79px;
+  height: 37px;
+  fill: #95e1d3;
+}
+
+.icon-2 {
+  width: 37px;
+  height: 37px;
+  fill: #95e1d3;
+}
+
+.icon-3 {
+  width: 37px;
+  height: 37px;
+  fill: #95e1d3;
+}
+
+.icon-4 {
+  width: 35.01px;
+  height: 30.86px;
+  fill: #95e1d3;
+}
+
+.icon-5 {
+  width: 37px;
+  height: 37px;
+  fill: #95e1d3;
+}
+
+.icon-6 {
+  width: 37px;
+  height: 37px;
+  fill: #95e1d3;
 }
