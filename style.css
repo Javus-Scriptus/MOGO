@@ -1,91 +1,241 @@
+/* fonts */
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+
+/* general */
+
 :root {
-  --dark-gray: #626262;
-  --coffee-brown: #b4ad9e;
-  --light-brown: #7d7d7d;
-  --blue: #03a9f4;
-  --white: #ffffff;
+  --background: #e5e5e5;
   --icon-green: #95e1d3;
+  --text-black: #333333;
+  --hover-coral: #f38181;
+  --text-gray: #b6b6b6;
 }
 
-body {
-  background: linear-gradient(121.28deg, #31bc00 0%, #000000 100%),
-    linear-gradient(180deg, #5200ff 0%, #1a0050 100%),
-    linear-gradient(341.1deg, #ff0000 7.52%, #1700a4 77.98%),
-    radial-gradient(49.82% 80.51% at 49.82% 50%, #5a0069 0%, #ff3d00 100%),
-    radial-gradient(50% 72.12% at 50% 50%, #eb00ff 0%, #110055 100%);
-  background-blend-mode: color-dodge, overlay, difference, difference, normal;
-}
-
-nav a {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  color: #7d7d7d;
-}
-
-.card-category {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  color: #b4ad9e;
-}
-
-.card-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  color: #626262;
-}
-
-.card-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  color: #626262;
-}
-
-.button {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  color: #626262;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 906px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  outline: 2px solid red;
+  vertical-align: middle;
+  align-items: center;
 }
 
-/* section 1 */
-
-.icon-1 {
-  width: 37.79px;
-  height: 37px;
-  fill: #95e1d3;
+.body {
+  background-color: #e5e5e5;
 }
 
-.icon-2 {
+/* header */
+
+.header {
+  margin-bottom: 68px;
+}
+
+.logo {
+  width: 98px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #95e1d3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+  margin-left: 632px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #95e1d3;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* main */
+
+/* section-1 */
+
+.section-1-container {
+  margin-top: 105px;
+}
+
+.explaning-heading {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Kaushan Script', cursive;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.main-heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 74px;
+}
+
+.bottom-card {
+  margin-top: 102px;
+}
+
+.icon {
   width: 37px;
   height: 37px;
   fill: #95e1d3;
+  margin-right: 20px;
 }
 
-.icon-3 {
-  width: 37px;
-  height: 37px;
-  fill: #95e1d3;
+.icon-top {
+    margin-top: -40px;
 }
 
-.icon-4 {
-  width: 35.01px;
-  height: 30.86px;
-  fill: #95e1d3;
+.icon-bottom {
+  margin-top: 60px;
 }
 
-.icon-5 {
-  width: 37px;
-  height: 37px;
-  fill: #95e1d3;
+.card-heading {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  margin-bottom: 20px;
 }
 
-.icon-6 {
-  width: 37px;
-  height: 37px;
-  fill: #95e1d3;
+.card-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #b6b6b6;
+}
+
+/* section 2 */
+
+.section-1 {
+  margin-bottom: 100px;
+}
+
+.section-2-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #b6b6b6;
+  margin-top: 85px;
+  margin-bottom: 27px;
+}
+
+.biography-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.biography-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 380px;
+  height: 546px;
+}
+
+.biography-heading {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.biography-text {
+  font-size: 15px;
+  font-weight: Light Italic;
+  color: #b6b6b6;
+}
+
+/* footer */
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.footer-divider {
+  margin-top: 80px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.footer-span {
+  color: #f38181;
+}
+
+.subscribe-content {
+  display: flex;
+  margin-left: 820px;
+  margin-top: -43px;
+}
+
+.subscribe-input {
+  width: 230px;
+  height: 39px;
+  border: 2px solid #b6b6b6;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 12px 146px 11px 10px;
+  color: #b6b6b6;
+  outline: none;
+  transition: 0.4s ease-out;
+}
+
+.subscribe-input:hover {
+  transform: scale(1.2);
+}
+
+.subscribe-button {
+  width: 150px;
+  height: 41px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 38px 11px 38px;
+  color: #ffffff;
+  background-color: #95e1d3;
+  border: none;
+  transition: 0.5s ease-out;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  border-radius: 4px;
 }
