@@ -21,25 +21,24 @@
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  flex-wrap: wrap;
-  /* outline: 2px solid red; */
-  vertical-align: middle;
-  align-items: center;
 }
 
 .body {
   background-color: #e5e5e5;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* header */
 
 .header {
   margin-bottom: 68px;
+  align-items: center;
 }
 
 .logo {
@@ -47,6 +46,8 @@
   font-size: 30px;
   font-weight: bold;
   color: #95e1d3;
+  position: absolute;
+  left: -600px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,6 +56,9 @@
   list-style: none;
   gap: 55px;
   margin-left: 632px;
+  align-items: center;
+  position: relative;
+  padding-top: 50px;
 }
 
 .header a {
@@ -107,6 +111,7 @@
 
 .main-heading {
   font-size: 30px;
+  text-transform: uppercase;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: #333333;
@@ -123,30 +128,41 @@
   transform: translateX(-50%);
 }
 
+/* content-cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+  margin-top: 150px;
+  /* outline: 2px solid red; */
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  /* padding-bottom: 70px; */
+  /* padding-left: 70px; */
   width: 330px;
-  height: 74px;
-}
-
-.bottom-card {
-  margin-top: 102px;
+  /* height: 148px; */
+  /* outline: 2px solid red; */
+  position: relative;
+  /* outline: 2px solid red; */
+  /* box-shadow: 8px 5px 75px -13px rgba(0,0,0,0.75); */
 }
 
 .icon {
   width: 37px;
   height: 37px;
   fill: #95e1d3;
-  margin-right: 20px;
-}
-
-.icon-top {
-  margin-top: -40px;
-}
-
-.icon-bottom {
-  margin-top: 60px;
+  position: relative;
+  left: -50px;
+  /* top: 0; */
+  /* margin-right: 20px; */
 }
 
 .card-heading {
@@ -155,6 +171,8 @@
   font-family: 'Roboto', sans-serif;
   color: #333333;
   margin-bottom: 20px;
+  position: absolute;
+  text-transform: uppercase;
 }
 
 .card-text {
@@ -162,6 +180,7 @@
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #b6b6b6;
+  /* position: absolute; */
 }
 
 /* section 2 */
