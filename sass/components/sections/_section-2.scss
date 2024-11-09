@@ -1,0 +1,55 @@
+.section-2-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #b6b6b6;
+  margin-top: 85px;
+  margin-bottom: 27px;
+  animation: carpet 1s linear 1;
+}
+
+.biography-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.biography-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 380px;
+  height: 546px;
+}
+
+.biography-card:hover {
+  animation: shadow-pop 1s ease 1;
+}
+
+@keyframes shadow-pop {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.biography-heading {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  animation: carpet 1s linear 1;
+}
+
+.biography-text {
+  font-size: 15px;
+  font-weight: Light Italic;
+  color: #b6b6b6;
+  animation: carpet 1s linear 1;
+}
