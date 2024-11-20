@@ -6,12 +6,22 @@
   margin-top: 105px;
 }
 
-.headings-wraper {
+.main__headings-wraper {
   text-align: center;
   position: relative;
+
+  &::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #f38181;
+    position: absolute;
+    bottom: -40px;
+    transform: translateX(-50%);
+  }
 }
 
-.explaning-heading {
+.main__explaning-heading {
   font-size: 24px;
   font-weight: 400;
   font-family: 'Kaushan Script', cursive;
@@ -21,7 +31,7 @@
   animation: carpet 1s linear 1;
 }
 
-.main-heading {
+.main__main-heading {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
@@ -42,19 +52,9 @@
   }
 }
 
-.headings-wraper::after {
-  content: '';
-  width: 60px;
-  height: 4px;
-  background-color: #f38181;
-  position: absolute;
-  bottom: -40px;
-  transform: translateX(-50%);
-}
-
 /* content-cards */
 
-.cards {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -66,7 +66,7 @@
   /* outline: 2px solid red; */
 }
 
-.card {
+.card-container__card {
   /* padding-left: 100px; */
   display: flex;
   flex-direction: column;
@@ -74,11 +74,40 @@
   position: relative;
   cursor: default;
   /* outline: 2px solid red; */
-}
 
-.card:hover {
-  animation: card-inset-shadow 2s linear 1;
-  animation-direction: alternate-reverse;
+  &:hover {
+    animation: card-inset-shadow 2s linear alternate-reverse 1;
+  }
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+    fill: #95e1d3;
+    position: relative;
+    left: -50px;
+    /* top: 0; */
+    /* margin-right: 20px; */
+  }
+
+  &__heading {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    margin-bottom: 20px;
+    position: absolute;
+    text-transform: uppercase;
+    animation: carpet 1s linear 1;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #b6b6b6;
+    animation: carpet 1s linear 1;
+    /* position: absolute; */
+  }
 }
 
 @keyframes card-inset-shadow {
@@ -88,35 +117,4 @@
   100% {
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.6);
   }
-}
-
-
-.icon {
-  width: 37px;
-  height: 37px;
-  fill: #95e1d3;
-  position: relative;
-  left: -50px;
-  /* top: 0; */
-  /* margin-right: 20px; */
-}
-
-.card-heading {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #333333;
-  margin-bottom: 20px;
-  position: absolute;
-  text-transform: uppercase;
-  animation: carpet 1s linear 1;
-}
-
-.card-text {
-  font-size: 15px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #b6b6b6;
-  animation: carpet 1s linear 1;
-  /* position: absolute; */
 }
